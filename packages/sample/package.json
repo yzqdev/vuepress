@@ -1,0 +1,33 @@
+{
+  "name": "my-vuepress-site",
+  "version": "0.0.1",
+  "description": "A VuePress project",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:build": "dotenv -v rspack=y -- vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "dev:webpack": "dotenv -v rspack=n -- vuepress dev docs",
+    "dev:rspack": "dotenv -v rspack=y -- vuepress dev docs",
+    "docs:update-package": "yarn dlx vp-update"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.6.3",
+    "@rspack/core": "0.6.3",
+      "@vuepress/bundler-vite": "workspace:*",
+    "@vuepress/bundler-webpack": "workspace:*",
+    "@vuepress/bundler-rspack": "workspace:*",
+    "sass": "^1.75.0",
+    "sass-loader": "^14.2.1",
+    "vue": "^3.4.23",
+    "vuepress": "workspace:*",
+    "@vuepress/theme-default": "workspace:*",
+
+
+
+    "webpack-5-chain": "^8.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}

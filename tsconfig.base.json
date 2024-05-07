@@ -1,0 +1,14 @@
+{
+  // remove node_modules prefix after cypress bump ts-node to latest version
+  "extends": "./node_modules/tsconfig-vuepress/base.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "lib": ["DOM", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "target": "ES2022"
+  }
+}
